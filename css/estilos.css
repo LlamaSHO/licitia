@@ -1,0 +1,102 @@
+/* Modelo de caja: el width incluye padding y borde */
+* { box-sizing: border-box; }
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #e6edf7;
+    background-color: #05070d;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Cabecera y menú */
+#cabecera {
+    background-color: #0a1020;
+    border-bottom: 3px solid #1e6fff;
+    padding: 20px;
+    text-align: center;
+}
+#cabecera img { width: 120px; border-radius: 10px; }
+#cabecera h1 { color: #4da3ff; margin: 10px 0 0; }
+
+nav { background-color: #0d1b3d; text-align: center; padding: 10px; }
+nav a { color: #ffffff; text-decoration: none; margin: 0 15px; font-weight: bold; }
+nav a:hover { color: #4da3ff; }
+
+/* Contenido */
+main { width: 900px; max-width: 100%; margin: 20px auto; padding: 0 15px; }
+h2 { color: #4da3ff; border-bottom: 2px solid #1e6fff; padding-bottom: 5px; }
+
+.caja {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #1e6fff;
+    border-radius: 10px;
+    margin: 20px auto;
+    background-color: #0a1020;
+}
+.destacado { color: rgb(77, 163, 255); font-weight: bold; }
+
+/* Botones */
+.botones { text-align: center; margin: 25px 0; }
+.boton {
+    display: inline-block;
+    background-color: #1e6fff;
+    color: #ffffff;
+    padding: 12px 25px;
+    margin: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.boton:hover { background-color: #6a4dff; }
+
+/* Tabla */
+table { width: 100%; border-collapse: collapse; }
+th { background-color: #0d1b3d; color: #ffffff; }
+th, td { border: 1px solid #1e6fff; padding: 10px; text-align: left; }
+
+/* Formulario */
+form label { display: block; margin-top: 12px; }
+form input, form select, form textarea {
+    width: 100%; padding: 8px; margin-top: 4px;
+    background-color: #05070d; color: #ffffff;
+    border: 1px solid #1e6fff; border-radius: 6px;
+}
+form input[type="checkbox"] { width: auto; }
+form button {
+    margin-top: 15px; padding: 10px 25px; border: none; border-radius: 8px;
+    background-color: #1e6fff; color: #ffffff; font-weight: bold; cursor: pointer;
+}
+form button:hover { background-color: #6a4dff; }
+
+footer { background-color: #0a1020; border-top: 3px solid #1e6fff; text-align: center; padding: 15px; margin-top: 30px; }
+footer a { color: #4da3ff; }
+
+/* ---------- Estilo tipo GrietaMeta (solo cosas vistas en clase) ---------- */
+#cabecera { text-align: left; padding: 12px 30px; }
+#cabecera img { width: 60px; vertical-align: middle; }
+#cabecera h1 { display: inline; font-size: 24px; margin-left: 10px; }
+.etiqueta { color: #4da3ff; font-size: 14px; border: 1px solid #1e6fff; border-radius: 20px; padding: 3px 12px; }
+
+#hero { text-align: center; padding: 50px 20px; margin: 20px auto; }
+#hero h2 { font-size: 36px; border-bottom: none; color: #ffffff; }
+#hero em { color: #4da3ff; }
+#hero p { font-size: 18px; color: #b8c7e0; }
+
+.rejilla { border-collapse: separate; border-spacing: 15px; }
+.rejilla td.tarjeta { width: 33%; border: 2px solid #1e6fff; border-radius: 10px; background-color: #0a1020; padding: 20px; vertical-align: top; }
+.rejilla td.tarjeta:hover { border-color: #6a4dff; }
+.rejilla h3 { color: #4da3ff; margin-top: 0; }
+.rol { color: #6a4dff; font-weight: bold; }
+
+.plan { text-align: center; border: 2px solid #6a4dff; }
+.precio { font-size: 32px; color: #ffffff; font-weight: bold; }
+
+.legal { font-size: 13px; color: #8a9bb8; }
+#pie table { width: 100%; border: none; }
+#pie th, #pie td { border: none; background-color: transparent; vertical-align: top; text-align: left; }
+#pie th { color: #4da3ff; }
+#pie a { color: #b8c7e0; text-decoration: none; }
+#pie a:hover { color: #ffffff; }
